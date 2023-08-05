@@ -5,9 +5,6 @@
 - 🎯 Always looking for new challenges
 <!--- <h3 align="center">A passionate Data Science from El Salvador </h3> -->
 
-## 🌐 Conect with me: 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://www.instagram.com/spacetdha/)    [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osminlarreynaga/) [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@osminlarreynaga) 
-
 # 💻 Tech Skills:
 
 ### LANGUAGES
