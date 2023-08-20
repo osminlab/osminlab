@@ -21,9 +21,9 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)  
 
 # 📊 GitHub Stats:
-<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=osmin-lab&theme=jolly&hide_border=false&include_all_commits=false&count_private=false" />
+<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api?username=osminlab&theme=jolly&hide_border=false&include_all_commits=false&count_private=false" />
 
-<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=osmin-lab&theme=jolly&hide_border=false&include_all_commits=false&count_private=false&layout=compact" />
+<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=osminlab&theme=jolly&hide_border=false&include_all_commits=false&count_private=false&layout=compact" />
 
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
