@@ -2,7 +2,7 @@
 
 - 🎯 I enjoy solving real-world problems through automation, scalable infrastructure, and clean code — especially in challenging environments.
 - 🔍 I value teamwork, learning, and I'm always looking for the next challenge.
-- 👨‍💻 Check out my projects at my page [osminlab](https://www.osminlab.space)
+- 👨‍💻 Check out my projects at my page [osminlab](https://osminlab.space/)
 
 
 <p align="center"><b>✨ Always building. Always learning. 🚀</b></p>
