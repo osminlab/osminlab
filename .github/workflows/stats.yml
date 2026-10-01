@@ -26,6 +26,9 @@ jobs:
 
       - name: Install uv
         uses: astral-sh/setup-uv@v10.2.0
+        with:
+          # The script has no dependencies, so there is nothing to cache.
+          enable-cache: false
 
       - name: Update activity window
         env:
