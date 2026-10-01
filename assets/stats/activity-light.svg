@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="236" viewBox="0 0 840 236" role="img" aria-label="Average contributions">
+<title>Average contributions</title>
+
+<style>
+  text { font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif; fill: #1f2328; }
+  .title { font-size: 16px; font-weight: 600; }
+  .label { font-size: 13px; fill: #59636e; }
+  .small { font-size: 11px; fill: #59636e; }
+  .hero { font-size: 44px; font-weight: 600; }
+  .big { font-size: 28px; font-weight: 600; }
+  .value { font-size: 13px; font-weight: 600; }
+  /* Elements are visible by default; without CSS animations the final
+     state is shown. */
+  .fade { animation: fade .6s ease-out both; }
+  .grow { transform-box: fill-box; transform-origin: bottom;
+          animation: grow .7s cubic-bezier(.2,.8,.2,1) both; }
+  .slide { transform-box: fill-box; transform-origin: left;
+           animation: slide .9s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes fade { from { opacity: 0; } }
+  @keyframes grow { from { transform: scaleY(0); } }
+  @keyframes slide { from { transform: scaleX(0); } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade, .grow, .slide { animation: none; }
+  }
+</style>
+
+<rect x="0.5" y="0.5" width="839" height="235" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<text class="title" x="24" y="36">Average contributions</text>
+<text class="label" x="24" y="62">Per month · 2021–2026</text>
+<text class="label" x="600" y="62">Per day, by weekday</text>
+<line x1="24" y1="200" x2="564" y2="200" stroke="#d8dee4"/>
+<path class="grow" style="animation-delay:0ms" d="M34.5,200.0 V165.5 Q34.5,161.5 38.5,161.5 H54.5 Q58.5,161.5 58.5,165.5 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:300ms" x="46.5" y="155.5" text-anchor="middle">13.2</text>
+<text class="small" x="46.5" y="218" text-anchor="middle">Jan</text>
+<path class="grow" style="animation-delay:50ms" d="M79.5,200.0 V174.2 Q79.5,170.2 83.5,170.2 H99.5 Q103.5,170.2 103.5,174.2 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:350ms" x="91.5" y="164.2" text-anchor="middle">10.2</text>
+<text class="small" x="91.5" y="218" text-anchor="middle">Feb</text>
+<path class="grow" style="animation-delay:100ms" d="M124.5,200.0 V153.2 Q124.5,149.2 128.5,149.2 H144.5 Q148.5,149.2 148.5,153.2 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:400ms" x="136.5" y="143.2" text-anchor="middle">17.4</text>
+<text class="small" x="136.5" y="218" text-anchor="middle">Mar</text>
+<path class="grow" style="animation-delay:150ms" d="M169.5,200.0 V187.6 Q169.5,183.6 173.5,183.6 H189.5 Q193.5,183.6 193.5,187.6 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:450ms" x="181.5" y="177.6" text-anchor="middle">5.6</text>
+<text class="small" x="181.5" y="218" text-anchor="middle">Apr</text>
+<path class="grow" style="animation-delay:200ms" d="M214.5,200.0 V166.6 Q214.5,162.6 218.5,162.6 H234.5 Q238.5,162.6 238.5,166.6 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:500ms" x="226.5" y="156.6" text-anchor="middle">12.8</text>
+<text class="small" x="226.5" y="218" text-anchor="middle">May</text>
+<path class="grow" style="animation-delay:250ms" d="M259.5,200.0 V166.0 Q259.5,162.0 263.5,162.0 H279.5 Q283.5,162.0 283.5,166.0 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:550ms" x="271.5" y="156.0" text-anchor="middle">13.0</text>
+<text class="small" x="271.5" y="218" text-anchor="middle">Jun</text>
+<path class="grow" style="animation-delay:300ms" d="M304.5,200.0 V133.4 Q304.5,129.4 308.5,129.4 H324.5 Q328.5,129.4 328.5,133.4 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:600ms" x="316.5" y="123.4" text-anchor="middle">24.2</text>
+<text class="small" x="316.5" y="218" text-anchor="middle">Jul</text>
+<path class="grow" style="animation-delay:350ms" d="M349.5,200.0 V94.0 Q349.5,90.0 353.5,90.0 H369.5 Q373.5,90.0 373.5,94.0 V200.0 Z" fill="#2a78d6"/>
+<text class="value fade" style="animation-delay:650ms" x="361.5" y="84.0" text-anchor="middle">37.7</text>
+<text class="small" x="361.5" y="218" text-anchor="middle">Aug</text>
+<path class="grow" style="animation-delay:400ms" d="M394.5,200.0 V114.9 Q394.5,110.9 398.5,110.9 H414.5 Q418.5,110.9 418.5,114.9 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:700ms" x="406.5" y="104.9" text-anchor="middle">30.5</text>
+<text class="small" x="406.5" y="218" text-anchor="middle">Sep</text>
+<path class="grow" style="animation-delay:450ms" d="M439.5,200.0 V166.6 Q439.5,162.6 443.5,162.6 H459.5 Q463.5,162.6 463.5,166.6 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:750ms" x="451.5" y="156.6" text-anchor="middle">12.8</text>
+<text class="small" x="451.5" y="218" text-anchor="middle">Oct</text>
+<path class="grow" style="animation-delay:500ms" d="M484.5,200.0 V182.4 Q484.5,178.4 488.5,178.4 H504.5 Q508.5,178.4 508.5,182.4 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:800ms" x="496.5" y="172.4" text-anchor="middle">7.4</text>
+<text class="small" x="496.5" y="218" text-anchor="middle">Nov</text>
+<path class="grow" style="animation-delay:550ms" d="M529.5,200.0 V183.0 Q529.5,179.0 533.5,179.0 H549.5 Q553.5,179.0 553.5,183.0 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:850ms" x="541.5" y="173.0" text-anchor="middle">7.2</text>
+<text class="small" x="541.5" y="218" text-anchor="middle">Dec</text>
+<line x1="600" y1="200" x2="816" y2="200" stroke="#d8dee4"/>
+<path class="grow" style="animation-delay:0ms" d="M606.4,200.0 V94.0 Q606.4,90.0 610.4,90.0 H620.4 Q624.4,90.0 624.4,94.0 V200.0 Z" fill="#2a78d6"/>
+<text class="value fade" style="animation-delay:300ms" x="615.4" y="84.0" text-anchor="middle">0.8</text>
+<text class="small" x="615.4" y="218" text-anchor="middle">Mon</text>
+<path class="grow" style="animation-delay:50ms" d="M637.3,200.0 V131.2 Q637.3,127.2 641.3,127.2 H651.3 Q655.3,127.2 655.3,131.2 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:350ms" x="646.3" y="121.2" text-anchor="middle">0.5</text>
+<text class="small" x="646.3" y="218" text-anchor="middle">Tue</text>
+<path class="grow" style="animation-delay:100ms" d="M668.1,200.0 V140.3 Q668.1,136.3 672.1,136.3 H682.1 Q686.1,136.3 686.1,140.3 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:400ms" x="677.1" y="130.3" text-anchor="middle">0.4</text>
+<text class="small" x="677.1" y="218" text-anchor="middle">Wed</text>
+<path class="grow" style="animation-delay:150ms" d="M699.0,200.0 V118.7 Q699.0,114.7 703.0,114.7 H713.0 Q717.0,114.7 717.0,118.7 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:450ms" x="708.0" y="108.7" text-anchor="middle">0.6</text>
+<text class="small" x="708.0" y="218" text-anchor="middle">Thu</text>
+<path class="grow" style="animation-delay:200ms" d="M729.9,200.0 V107.4 Q729.9,103.4 733.9,103.4 H743.9 Q747.9,103.4 747.9,107.4 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:500ms" x="738.9" y="97.4" text-anchor="middle">0.7</text>
+<text class="small" x="738.9" y="218" text-anchor="middle">Fri</text>
+<path class="grow" style="animation-delay:250ms" d="M760.7,200.0 V169.2 Q760.7,165.2 764.7,165.2 H774.7 Q778.7,165.2 778.7,169.2 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:550ms" x="769.7" y="159.2" text-anchor="middle">0.2</text>
+<text class="small" x="769.7" y="218" text-anchor="middle">Sat</text>
+<path class="grow" style="animation-delay:300ms" d="M791.6,200.0 V123.3 Q791.6,119.3 795.6,119.3 H805.6 Q809.6,119.3 809.6,123.3 V200.0 Z" fill="#2a78d6"/>
+<text class="small fade" style="animation-delay:600ms" x="800.6" y="113.3" text-anchor="middle">0.6</text>
+<text class="small" x="800.6" y="218" text-anchor="middle">Sun</text>
+</svg>

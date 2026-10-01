@@ -62,5 +62,9 @@
 <h1 align="center">📊 GitHub Stats</h1>
 
 <!-- osminlab-site:activity:start -->
-_Stats appear after the first run of the "Update activity stats" workflow._
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/overview-dark.svg"><img alt="GitHub activity" src="assets/stats/overview-light.svg"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/activity-dark.svg"><img alt="Average contributions per month and per weekday" src="assets/stats/activity-light.svg"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/languages-dark.svg"><img alt="Top languages" src="assets/stats/languages-light.svg"></picture>
+</p>
 <!-- osminlab-site:activity:end -->
