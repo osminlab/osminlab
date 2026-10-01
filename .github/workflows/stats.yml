@@ -1,0 +1,46 @@
+---
+# Refreshes the activity window of README.md and its SVG cards in
+# assets/stats/ (all-time totals, average contributions, top languages)
+name: Update activity stats
+
+on:
+  schedule:
+    - cron: "43 6 4 * *" # UTC Off-time on purpose
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One run at a time: two runs never race to push README.md.
+concurrency:
+  group: readme
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10
+
+      - name: Update activity window
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: uv run scripts/stats.py
+
+      - name: Commit and push if README or cards changed
+        run: |
+          # --porcelain also sees files that are not tracked yet.
+          if [ -z "$(git status --porcelain README.md assets/)" ]; then
+            echo "README.md and assets/ unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/
+          git commit -m "docs: update activity stats"
+          git push
