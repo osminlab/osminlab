@@ -64,7 +64,7 @@
 <!-- osminlab-site:activity:start -->
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/overview-dark.svg"><img alt="GitHub activity" src="assets/stats/overview-light.svg"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/activity-dark.svg"><img alt="Average contributions per month and per weekday" src="assets/stats/activity-light.svg"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/activity-dark.svg"><img alt="Contribution metrics: average per month, median per active day by weekday" src="assets/stats/activity-light.svg"></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="assets/stats/languages-dark.svg"><img alt="Top languages" src="assets/stats/languages-light.svg"></picture>
 </p>
 <!-- osminlab-site:activity:end -->
