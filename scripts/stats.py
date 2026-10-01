@@ -30,6 +30,7 @@ import urllib.request
 from collections import Counter
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
+from statistics import median
 
 from cards import write_cards
 
@@ -113,19 +114,17 @@ def daily_history(login: str, token: str, years: list[int]) -> dict[date, int]:
 
 
 def averages(days: dict[date, int], since: date, today: date) -> dict:
-    """Average contributions per calendar month and per weekday.
+    """Average contributions per calendar month, median per active weekday.
 
-    Only complete periods count: every day from the account's creation to
-    yesterday for weekdays, and only whole months for months (the month the
-    account was created and the current one are partial, so they are left out).
+    Months: only whole months count (the month the account was created and
+    the current one are partial, so they are left out). Weekdays: the median
+    of the days with at least one contribution, from the account's creation
+    to yesterday, so a single busy day does not inflate the value.
     """
-    weekday_total: Counter[int] = Counter()
-    weekday_seen: Counter[int] = Counter()
-    day = since
-    while day < today:
-        weekday_total[day.weekday()] += days.get(day, 0)
-        weekday_seen[day.weekday()] += 1
-        day += timedelta(days=1)
+    weekday_active: dict[int, list[int]] = {w: [] for w in range(7)}
+    for d, count in days.items():
+        if since <= d < today and count:
+            weekday_active[d.weekday()].append(count)
     partial = {(since.year, since.month), (today.year, today.month)}
     month_total: Counter[int] = Counter()
     month_seen: Counter[int] = Counter()
@@ -146,8 +145,9 @@ def averages(days: dict[date, int], since: date, today: date) -> dict:
             (f"{date(2000, m, 1):%b}", avg(month_total, month_seen, m))
             for m in range(1, 13)
         ],
-        "weekday_avg": [
-            (WEEKDAYS[w], avg(weekday_total, weekday_seen, w)) for w in range(7)
+        "weekday_median": [
+            (WEEKDAYS[w], float(median(weekday_active[w])) if weekday_active[w] else 0.0)
+            for w in range(7)
         ],
         "span": f"{since.year}–{today.year}",
     }
@@ -236,7 +236,7 @@ def picture(src: str, name: str, alt: str) -> str:
 
 ALT = {
     "overview": "GitHub activity",
-    "activity": "Average contributions per month and per weekday",
+    "activity": "Contribution metrics: average per month, median per active day by weekday",
     "languages": "Top languages",
 }
 

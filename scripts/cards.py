@@ -166,14 +166,14 @@ def overview(t: dict, s: dict) -> str:
 
 
 def activity(t: dict, s: dict) -> str:
-    """Average contributions per calendar month and per weekday."""
+    """Average contributions per calendar month, median per active weekday."""
     body = [
-        f'<text class="label" x="24" y="62">Per month · {s["span"]}</text>',
-        f'<text class="label" x="{WIDTH - 240}" y="62">Per day, by weekday</text>',
+        f'<text class="label" x="24" y="62">Average per month · {s["span"]}</text>',
+        f'<text class="label" x="{WIDTH - 240}" y="62">Median per active day</text>',
         *bars(t, s["month_avg"], 24, WIDTH - 300, 90, 200, 24),
-        *bars(t, s["weekday_avg"], WIDTH - 240, 216, 90, 200, 18),
+        *bars(t, s["weekday_median"], WIDTH - 240, 216, 90, 200, 18),
     ]
-    return card(t, 236, "Average contributions", body)
+    return card(t, 236, "Metrics Contributions", body)
 
 
 def icon(path: str | None, x: float, y: float, color: str) -> str:
@@ -221,7 +221,7 @@ def languages(t: dict, s: dict) -> str:
 
 CARDS = {
     "overview": (overview, ("all_time",)),
-    "activity": (activity, ("month_avg", "weekday_avg")),
+    "activity": (activity, ("month_avg", "weekday_median")),
     "languages": (languages, ("languages",)),
 }
 
